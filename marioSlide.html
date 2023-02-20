@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+
+        #pyramid {
+            margin: auto;
+            padding: 5px;
+            line-height: 0;
+            font-size: 25px;
+            width: 800px;
+            height: 550px;
+            border: 2px solid black;
+            border-radius: 20px;
+            color: royalblue;
+            background-color: lavender;
+        }
+
+        body {
+            font-family: "Courier New", monospace;
+            text-align: center;
+            background-color: tan;
+
+        }
+        h1 {
+            font-weight: bold;
+            font-size: 40px;
+        }
+
+
+    </style>
+</head>
+<body >
+    <h1>Slide Pyramid</h1>
+
+
+    <br>
+    <label>What brick</label>
+    <!--The dropdown box allows you to pick a certain value and change the bricks of the pyramid.-->
+    <select  id="dropdown" onchange="slideMyPyramid()"  >
+        <option value="#">#</option>
+        <option value="$">$</option>
+        <option value="L">L</option>
+        <option value="@">@</option>
+    </select>
+    <p id="drop"></p>
+
+    <label>How high?</label>
+    <!--This is the slider function that allows you to pick how pick you want your pyramid to be-->
+    <input  type="range" min="1" max="20" value="5" id="heightSlider" oninput="slideMyPyramid()">
+
+
+
+    <br><br>
+
+    <br><br>
+
+    <div id="pyramid">
+
+    <script src="mario.js"></script>
+</body>
+</html>
