@@ -1,46 +1,54 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <style>
+  <style>
+    #pyramid {
+      line-height: 0;
+      font-size: 30px;
+    }
 
-        #pyramid {
-            line-height: 0;
-            font-size: 30px;
-        }
+    body {
+      font-family: "Courier New", monospace;
+      text-align: center;
+    }
 
-        body {
-            font-family: "Courier New", monospace;
-            text-align: center;
-        }
-    </style>
+    .invalid-field {
+      border: 1px solid red;
+    }
+
+    .error-message {
+      color: red;
+    }
+  </style>
 </head>
-<body >
-    <h1>Mario 3</h1>
 
-    <br>
+<body>
+  <h1>Mario 4</h1>
 
-    <p>When you say</p>
+  <p>When you say</p>
+  <p><strong>Draw a pyramid</strong></p>
+  <p>I say:</p>
+  <br>
 
-    <p><strong>Draw a pyramid</strong></p>
-
-    <p>I say:</p>
-
-    <br>
-
-    <label>How high?</label>
-
-    <input type="text" id="height">
-
+  <form id="draw-form">
+    <label>
+      How high?
+      <!--A required in the form will also make a error be displayed -->
+      <input type="text" id="height" />
+      <label class="error-message">
+        <!-- If there was a user error, we will put a message in here -->
+      </label>
+    </label>
     <br><br>
+    <input type="submit" value="Draw a pyramid" />
+  </form>
 
-    <button onclick="myFunction()">Draw a pyramid</button>
+  <br><br>
 
-    
+  <div id="pyramid"></div>
 
-    <br><br>
-
-    <div id="pyramid"></div>
-
-    <script src="mario.js"></script>
+  <script src="mario.js"></script>
 </body>
+
 </html>
