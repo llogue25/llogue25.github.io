@@ -1,0 +1,57 @@
+.bitGuy {
+  height: 300px;
+  width: auto;
+  border-image-slice: 13 13 13 13;
+  border-image-width: 13px 13px 13px 13px;
+  border-image-outset: 13px 13px 13px 13px;
+  border-image-repeat: repeat repeat;
+  border-image-source: url("https://mdn.github.io/css-examples/tools/border-image-generator/border-image-4.png");
+  border-style: solid;
+}
+
+main {
+  background-color: #585a5a;
+  color: gold;
+  border-image-slice: 13 13 13 13;
+  border-image-width: 13px 13px 13px 13px;
+  border-image-outset: 13px 13px 13px 13px;
+  border-image-repeat: repeat repeat;
+  border-image-source: url("https://mdn.github.io/css-examples/tools/border-image-generator/border-image-4.png");
+  border-style: solid;
+}
+
+body {
+  background-color: black;
+  border-image-slice: 13 13 13 13;
+  border-image-width: 13px 13px 13px 13px;
+  border-image-outset: 13px 13px 13px 13px;
+  border-image-repeat: repeat repeat;
+  border-image-source: url("https://mdn.github.io/css-examples/tools/border-image-generator/border-image-4.png");
+  border-style: solid;
+  
+}
+
+#wrapper {
+  background-image: url("assets/background.jpg");
+  width: 60%;
+  margin: auto;
+  margin-top: 30px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+ul {
+  list-style-image: url('assets/yoda.png');
+}
+
+#list_border {
+  border-image-slice: 13 13 13 13;
+  border-image-width: 13px 13px 13px 13px;
+  border-image-outset: 13px 13px 13px 13px;
+  border-image-repeat: repeat repeat;
+  border-image-source: url("https://mdn.github.io/css-examples/tools/border-image-generator/border-image-4.png");
+  border-style: solid;
+  width: 15px;
+  height: 15px;
+}
