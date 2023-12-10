@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>First Page</title>
+</head>
+
+<body>
+  <form action="https://webdevbasics.net/scripts/demo.php" method="post">
+    <label for="uname">User name:</label>
+    <input type="text" id="uname" name="uname" maxlength="30"><br><br>
+    <!--Radio Buttons-->
+    <div id="months">
+      <h3>Vote for your favorite months:</h3>
+      <input type="radio" id="jan" name="January" value="January">
+      <label for="jan">January</label>
+      <input type="radio" id="feb" name="February" value="February">
+      <label for="feb">February</label>
+      <input type="radio" id="mar" name="March" value="March">
+      <label for="mar">March</label>
+      <input type="radio" id="apr" name="April" value="April">
+      <label for="apr">April</label>
+      <input type="radio" id="may" name="May" value="May">
+      <label for="may">May</label>
+      <input type="radio" id="jun" name="June" value="June">
+      <label for="jun">June</label>
+      <input type="radio" id="jul" name="July" value="July">
+      <label for="jul">July</label>
+      <input type="radio" id="aug" name="August" value="August">
+      <label for="aug">August</label>
+      <input type="radio" id="sep" name="September" value="September">
+      <label for="sep">September</label>
+      <input type="radio" id="oct" name="October" value="October">
+      <label for="oct">October</label>
+      <input type="radio" id="nov" name="November" value="November">
+      <label for="nov">November</label>
+      <input type="radio" id="dec" name="December" value="December">
+      <label for="dec">December</label>
+    </div>
+    <br>
+    <div id="socialMedia">
+      <label for="socials">What's your favorite social media platform:</label>
+      <select name="social" id="social">
+        <option disabled selected value>Select an option</option>
+        <option value="Instagram">Instagram</option>
+        <option value="X">X</option>
+        <option value="Snapchat">Snapchat</option>
+        <option value="Youtube">Youtube</option>
+      </select>
+    </div>
+    <br>
+    <div id="address">
+      <fieldset>
+        <legend>Shipping Address</legend>
+        <label for="addressLine1">Address Line 1:</label>
+        <input type="text" id="addressLine1" name="addressLine1"><br>
+
+        <label for="addressLine2">Address Line 2:</label>
+        <input type="text" id="addressLine2" name="addressLine2"><br>
+
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city"><br>
+
+        <label for="state">State:</label>
+        <input type="text" id="state" name="state"><br>
+
+        <label for="zip">ZIP:</label>
+        <input type="text" id="zip" name="zip"><br>
+      </fieldset>
+    </div>
+    <br>
+    <div id="hiddenInput">
+      <input type="hidden" id="userid" name="userid" value="user_id">
+    </div>
+    <br>
+    <div id="password">
+      <label for="pword">Password:</label>
+      <input type="password" id="pword" name="pword" required>
+    </div>
+    <br>
+    <input type="image"
+      src="https://dabuttonfactory.com/button.png?t=Submit&f=Open+Sans-Bold&ts=26&tc=fff&hp=45&vp=20&c=10&bgt=unicolored&bgc=40e040"
+      alt="submit">
+    <input type="reset" value="Reset">
+  </form>
+  <br>
+  <a href="/unit11/index.html">Return to Home Page</a>
+</body>
+
+</html>
